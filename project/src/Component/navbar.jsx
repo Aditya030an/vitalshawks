@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "./photos/logo.jpeg"; // replace with your logo
+import { Link } from "react-router-dom"; 
 
 
 export default function Navbar() {
@@ -11,13 +12,13 @@ export default function Navbar() {
     <header className="w-full fixed top-0 left-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center cursor-pointer">
           <img
             src={logo}
             alt="Logo"
             className="h-20 w-auto object-contain" // Large logo
           />
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-10 text-lg font-semibold text-[#0e3b57]">
