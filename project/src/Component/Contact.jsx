@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export default function ContactUs() {
   return (
@@ -54,7 +54,7 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <div className="flex items-center space-x-4">
+          {/* <div className="flex items-center space-x-4">
             <div className="p-4 rounded-full bg-gradient-to-r from-blue-600 to-indigo-500 text-white shadow-lg">
               <FaMapMarkerAlt size={22} />
             </div>
@@ -62,7 +62,7 @@ export default function ContactUs() {
               <p className="font-semibold text-gray-800">Address</p>
               <p className="text-gray-600">Indore, Madhya Pradesh, India</p>
             </div>
-          </div>
+          </div> */}
         </motion.div>
 
         {/* Right Side - Contact Form */}
@@ -96,7 +96,7 @@ export default function ContactUs() {
             <textarea
               rows="4"
               placeholder="Write your message..."
-              className="mt-2 w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+              className="mt-2 w-full p-3 resize-none border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
             ></textarea>
           </div>
 
