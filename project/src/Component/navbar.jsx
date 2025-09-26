@@ -22,7 +22,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-10 text-lg font-semibold text-[#0e3b57]">
-          <a href="#" className="hover:text-orange-600 transition duration-300">Services</a>
+          <a href="/" className="hover:text-orange-600 transition duration-300">Services</a>
           <a href="Industries" className="hover:text-orange-600 transition duration-300">Industry</a>
           <a href="Client" className="hover:text-orange-600 transition duration-300">Clients</a>
           <a href="About" className="hover:text-orange-600 transition duration-300">About</a>

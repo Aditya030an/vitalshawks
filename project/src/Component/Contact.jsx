@@ -50,7 +50,7 @@ export default function ContactUs() {
             </div>
             <div>
               <p className="font-semibold text-gray-800">Email</p>
-              <p className="text-gray-600">info@yourcompany.com</p>
+              <p className="text-gray-600">Info@vitalhawks.com</p>
             </div>
           </div>
 
