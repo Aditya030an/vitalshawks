@@ -44,7 +44,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg border-t border-gray-200">
           <nav className="flex flex-col items-start space-y-4 py-6 px-8 text-lg font-medium text-[#0e3b57]">
-            <a href="#" className="hover:text-orange-600 transition">Services</a>
+            <a href="/" className="hover:text-orange-600 transition">Services</a>
             <a href="Industries" className="hover:text-orange-600 transition">Industry</a>
             <a href="Client" className="hover:text-orange-600 transition">Clients</a>
             <a href="About" className="hover:text-orange-600 transition">About</a>
