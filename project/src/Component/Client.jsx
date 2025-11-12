@@ -9,7 +9,9 @@ import logoFinfinity from "./photos/Finfinitylogo.png";
 import logoDronacharya from "./photos/Dronacharyalogo.png";
 import logoPolicy from "./photos/policylogo.png";
 import logoHindustan from "./photos/Hindustanlogo.png";
-
+import anton from "./photos/anton1.png";
+import returnofidea from "./photos/returnofidea.jpg";
+import jiffy from "./photos/jiffy.png";
 export default function Clients() {
   const fadeIn = {
     hidden: { opacity: 0, y: 60, scale: 0.95 },
@@ -27,6 +29,9 @@ export default function Clients() {
     { name: "Hindustan Times", logo: logoHindustan },
     { name: "Finfinity", logo: logoFinfinity },
     { name: "Dronacharya College, Gurugram, India", logo: logoDronacharya },
+    { name: "Anton paar", logo: anton },
+    { name: "Return of Idea", logo: returnofidea },
+    { name: " Jiffy", logo: jiffy }
   ];
 
   return (
