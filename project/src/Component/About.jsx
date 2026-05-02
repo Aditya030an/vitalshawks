@@ -34,17 +34,17 @@ export default function About() {
   return (
     <div className="w-full bg-[#f9fafb] text-gray-800">
       {/* Hero / Header */}
-      <section className="relative w-full min-h-[70vh] flex items-center justify-center text-center overflow-hidden bg-gradient-to-br from-[#0e2338] via-[#152c46] to-[#1c3c59] text-white">
+      <section className="relative w-full min-h-[55vh] sm:min-h-[60vh] lg:min-h-[70vh] flex items-center justify-center text-center overflow-hidden bg-gradient-to-br from-[#0e2338] via-[#152c46] to-[#1c3c59] text-white">
         {/* abstract blurred circles */}
         <div className="absolute -top-20 -left-20 w-72 h-72 bg-green-400/30 blur-3xl rounded-full"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/20 blur-3xl rounded-full"></div>
+        <div className="absolute bottom-0 right-0 w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-blue-500/20 blur-3xl rounded-full"></div>
 
-        <div className="relative z-10 px-6 md:px-16">
+        <div className="relative z-10 px-4 sm:px-4 sm:px-6 md:px-10 lg:px-12 lg:px-16">
           <motion.h1
             initial="hidden"
             animate="visible"
             variants={fadeIn}
-            className="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text"
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text"
           >
             About Vital Hawks
           </motion.h1>
@@ -52,7 +52,7 @@ export default function About() {
             initial="hidden"
             animate="visible"
             variants={fadeIn}
-            className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90"
+            className="text-base sm:text-xl md:text-2xl max-w-3xl mx-auto opacity-90"
           >
             Empowering Businesses with Accurate B2B Data and Smart Sales Support
           </motion.p>
@@ -60,13 +60,13 @@ export default function About() {
       </section>
 
       {/* Our Story & Vision */}
-      <section className="max-w-5xl mx-auto py-20 px-6 md:px-12 text-center">
+      <section className="max-w-5xl mx-auto py-20 px-4 sm:px-6 md:px-10 lg:px-12 text-center">
         <motion.h2
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeIn}
-          className="text-3xl md:text-4xl font-bold mb-8 text-[#0e2338]"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-[#0e2338]"
         >
           Our Story & Vision
         </motion.h2>
@@ -93,17 +93,17 @@ export default function About() {
       </section>
 
       {/* Why We Exist */}
-      <section className="relative bg-gradient-to-b from-white to-gray-100 py-20 px-6 md:px-12">
+      <section className="relative bg-gradient-to-b from-white to-gray-100 py-20 px-4 sm:px-6 md:px-10 lg:px-12">
         <motion.h2
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeIn}
-          className="text-3xl md:text-4xl font-bold text-center mb-14 text-[#0e2338]"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 lg:mb-14 text-[#0e2338]"
         >
           Why We Exist
         </motion.h2>
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
+        <div className="grid gap-5 sm:p-5 sm:p-4 sm:p-6 lg:p-8 lg:p-10 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
           {reasons.map((reason, i) => (
             <motion.div
               key={i}
@@ -112,7 +112,7 @@ export default function About() {
               viewport={{ once: true }}
               variants={fadeIn}
               custom={i}
-              className="bg-white/70 backdrop-blur-xl shadow-xl rounded-2xl p-8 border border-gray-100 hover:scale-105 transition-transform duration-500"
+              className="bg-white/70 backdrop-blur-xl shadow-xl rounded-2xl p-5 sm:p-4 sm:p-6 lg:p-8 border border-gray-100 hover:scale-105 transition-transform duration-500"
             >
               <FaCheckCircle className="text-green-500 text-3xl mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -125,13 +125,13 @@ export default function About() {
       </section>
 
       {/* Our Promise */}
-      <section className="max-w-6xl mx-auto py-20 px-6 md:px-12 text-center">
+      <section className="max-w-6xl mx-auto py-20 px-4 sm:px-6 md:px-10 lg:px-12 text-center">
         <motion.h2
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeIn}
-          className="text-3xl md:text-4xl font-bold text-[#0e2338] mb-6"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0e2338] mb-6"
         >
           Our Promise
         </motion.h2>
@@ -149,10 +149,10 @@ export default function About() {
       </section>
 
       {/* Connect With Us */}
-      <section className="relative bg-gradient-to-r from-[#0e2338] via-[#152c46] to-[#1c3c59] py-24 px-6 md:px-16 text-white text-center overflow-hidden">
+      <section className="relative bg-gradient-to-r from-[#0e2338] via-[#152c46] to-[#1c3c59] py-24 px-4 sm:px-4 sm:px-6 md:px-10 lg:px-12 lg:px-16 text-white text-center overflow-hidden">
         {/* background accents */}
         <div className="absolute top-0 left-0 w-80 h-80 bg-green-400/20 blur-3xl rounded-full"></div>
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/20 blur-3xl rounded-full"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] bg-blue-500/20 blur-3xl rounded-full"></div>
 
         <div className="relative z-10">
           <motion.h2
@@ -160,7 +160,7 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
-            className="text-4xl md:text-5xl font-extrabold mb-8"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8"
           >
             Connect With Us
           </motion.h2>
@@ -169,7 +169,7 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
-            className="text-lg mb-10 max-w-2xl mx-auto opacity-90"
+            className="text-lg mb-6 lg:mb-10 max-w-2xl mx-auto opacity-90"
           >
             Ready to build a stronger, smarter sales pipeline? Let’s make it happen
             together.
